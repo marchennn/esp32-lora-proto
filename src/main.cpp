@@ -86,10 +86,11 @@ void setup() {
     delay(500);
   }
 
+  LoRa.setTxPower(20, PA_OUTPUT_PA_BOOST_PIN);
   LoRa.setSyncWord(0xF3);
-  LoRa.setSpreadingFactor(8);
+  LoRa.setSpreadingFactor(9);
   LoRa.setSignalBandwidth(125E3);
-  LoRa.setCodingRate4(5);
+  LoRa.setCodingRate4(6);
 }
 
 void loop() {

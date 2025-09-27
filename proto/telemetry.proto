@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+message UAVTelemetry {
+  float roll = 1;
+  float pitch = 2;
+  float yaw = 3;
+  float compass = 4;
+  int32 gps_sat = 5;
+  int32 esc1 = 6;
+  int32 esc2 = 7;
+  int32 esc3 = 8;
+  int32 esc4 = 9;
+  float lat = 10;
+  float lon = 11;
+  float height = 12;
+  float speed = 13;
+  float airspeed = 14;
+  int32 preflight_check = 15;
+  int32 modestatus = 16;
+  int32 armstatus = 17;
+  int32 altholdstatus = 18;
+  int32 possholdstatus = 19;
+  float gainroll = 20;
+  float gainpitch = 21;
+  float gainyaw = 22;
+  float gainrollvel = 23;
+  float gainpitchvel = 24;
+  float gainyawvel = 25;
+  float gainlatitude = 26;
+  float gainlatitudevel = 27;
+  float gainlongitude = 28;
+  float gainlongitudevel = 29;
+  float gainalthold = 30;
+  float gainaltholdvel = 31;
+  int32 remthrottle = 32;
+  float remyaw = 33;
+  float rempitch = 34;
+  float remroll = 35;
+  float batteryvolt = 36;
+  int32 battery = 37;
+  float trimroll = 38;
+  float trimpitch = 39;
+  float yawtrim = 40;
+}
